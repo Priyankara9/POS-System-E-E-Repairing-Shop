@@ -27,6 +27,15 @@ public class AdminDashController {
     }
 
     public void usersButtonOnAction(ActionEvent actionEvent) {
+        Stage stage=(Stage) lbtlDateAndTime.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UsersForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setTitle("Admin Dash Board");
+        stage.show();
+        stage.setResizable(false);
     }
 
     public void itemsButtonOnAction(ActionEvent actionEvent) {
