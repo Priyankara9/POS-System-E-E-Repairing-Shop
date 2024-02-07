@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ItemsFormController {
-    public JFXTextField txtCode;
+public class CustomersFormController {
+    public JFXTextField txtCustomerId;
     public JFXTextField txtName;
-    public JFXTextField txtCategory;
-    public JFXTextField txtStatus;
-    public JFXTextField searchCode;
-    public JFXTreeTableView itemTable;
+    public JFXTextField txtMobileNo;
+    public JFXTextField txtEmail;
+    public JFXTextField searchName;
+    public JFXTreeTableView customerTable;
 
     public void updateButtonOnAction(ActionEvent actionEvent) {
     }
@@ -24,7 +24,7 @@ public class ItemsFormController {
     }
 
     public void backButtonOnAction(ActionEvent actionEvent) {
-        Stage stage=(Stage) txtStatus.getScene().getWindow();
+        Stage stage=(Stage) customerTable.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashForm.fxml"))));
         } catch (IOException e) {
