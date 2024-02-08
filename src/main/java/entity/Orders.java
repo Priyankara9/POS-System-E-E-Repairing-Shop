@@ -7,6 +7,8 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 
 @Data
@@ -20,5 +22,9 @@ public class Orders {
     private double amount;
     private String status;
     private LocalDate date;
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private Customer customer;
+
 
 }

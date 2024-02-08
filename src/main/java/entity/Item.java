@@ -7,6 +7,8 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Data
 @AllArgsConstructor
@@ -20,5 +22,8 @@ public class Item {
     private String category;
     private String status;
     private String description;
+    @ManyToOne
+    @JoinColumn(name="orderId")
+    private Orders orders;
 
 }
