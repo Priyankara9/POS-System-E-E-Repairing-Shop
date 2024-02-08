@@ -11,7 +11,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d1e4ee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemsFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d1e4ee;"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ItemsFormController">
    <children>
       <GridPane layoutY="14.0" prefHeight="500.0" prefWidth="800.0">
         <columnConstraints>
@@ -43,17 +45,27 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField fx:id="txtCode" prefHeight="25.0" prefWidth="167.0" promptText="Item Code" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                  <JFXTextField fx:id="txtName" prefWidth="40.0" promptText="Name" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                  <JFXTextField fx:id="txtCategory" prefWidth="40.0" promptText="Category" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                  <JFXTextField fx:id="txtStatus" prefHeight="25.0" prefWidth="160.0" promptText="Status" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
-                  <JFXTextField fx:id="searchCode" prefWidth="40.0" promptText="Item Code" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                  <JFXButton onAction="#updateButtonOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #529add;" text="Update" textFill="#01060a" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <JFXTextField fx:id="txtCode" prefHeight="25.0" prefWidth="167.0" promptText="Item Code"
+                                GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                  <JFXTextField fx:id="txtName" prefWidth="40.0" promptText="Name" GridPane.columnIndex="2"
+                                GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                  <JFXTextField fx:id="txtCategory" prefWidth="40.0" promptText="Category" GridPane.columnIndex="4"
+                                GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                  <JFXTextField fx:id="txtStatus" prefHeight="25.0" prefWidth="160.0" promptText="Status"
+                                GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                  <JFXTextField fx:id="searchCode" prefWidth="40.0" promptText="Item Code"
+                                GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <JFXButton onAction="#updateButtonOnAction" prefHeight="40.0" prefWidth="100.0"
+                             style="-fx-background-color: #529add;" text="Update" textFill="#01060a"
+                             GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton alignment="CENTER" onAction="#searchButtonOnAction" prefHeight="40.0" prefWidth="102.0" style="-fx-background-color: #a8d00b;" text="Search" textAlignment="CENTER" textFill="#171717" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <JFXButton alignment="CENTER" onAction="#searchButtonOnAction" prefHeight="40.0" prefWidth="102.0"
+                             style="-fx-background-color: #a8d00b;" text="Search" textAlignment="CENTER"
+                             textFill="#171717" GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                             GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -69,12 +81,14 @@
                   <TreeTableColumn prefWidth="119.0" resizable="false" text="Option" />
                </columns>
             </JFXTreeTableView>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="210.0" text="All Items " textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="210.0" text="All Items " textAlignment="CENTER"
+                   GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Times New Roman Bold" size="24.0" />
                </font>
             </Label>
-            <JFXButton onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #e70909;" text="Back" textFill="#1b1919" />
+            <JFXButton onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="58.0"
+                       style="-fx-background-color: #e70909;" text="Back" textFill="#1b1919" />
          </children>
       </GridPane>
    </children>

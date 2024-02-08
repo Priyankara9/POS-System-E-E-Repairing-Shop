@@ -18,7 +18,7 @@ public class AdminDashController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        stage.setTitle("Admin Dash Board");
+        stage.setTitle("Register New User");
         stage.show();
         stage.setResizable(false);
     }
@@ -30,7 +30,7 @@ public class AdminDashController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        stage.setTitle("Admin Dash Board");
+        stage.setTitle("View Customers");
         stage.show();
         stage.setResizable(false);
     }
@@ -42,7 +42,7 @@ public class AdminDashController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        stage.setTitle("Admin Dash Board");
+        stage.setTitle("View Users");
         stage.show();
         stage.setResizable(false);
     }
@@ -54,15 +54,33 @@ public class AdminDashController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        stage.setTitle("Admin Dash Board");
+        stage.setTitle("Items");
         stage.show();
         stage.setResizable(false);
     }
 
     public void partsButtonOnAction(ActionEvent actionEvent) {
+        Stage stage=(Stage) lbtlDateAndTime.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SparePartsForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setTitle("All Spare Parts");
+        stage.show();
+        stage.setResizable(false);
     }
 
     public void reportButtonOnAction(ActionEvent actionEvent) {
+        Stage stage=(Stage) lbtlDateAndTime.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ReportForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setTitle("View Reports");
+        stage.show();
+        stage.setResizable(false);
     }
 
     public void placeOrderButtonOnAction(ActionEvent actionEvent) {
@@ -72,7 +90,7 @@ public class AdminDashController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        stage.setTitle("Admin Dash Board");
+        stage.setTitle("Place an Oder");
         stage.show();
         stage.setResizable(false);
     }
