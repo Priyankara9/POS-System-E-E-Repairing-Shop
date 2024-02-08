@@ -96,6 +96,16 @@ public class AdminDashController {
     }
 
     public void statusButtonOnAction(ActionEvent actionEvent) {
+
+        Stage stage=(Stage) lbtlDateAndTime.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ChangeStatusForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.setTitle("Admin Dash Board");
+        stage.show();
+        stage.setResizable(false);
     }
 
     public void addPartsButtonOnAction(ActionEvent actionEvent) {
